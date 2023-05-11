@@ -11,4 +11,5 @@
 #  updated_at :datetime         not null
 #
 class Director < ApplicationRecord
+  has_many :filography, :class_name => "Movie"
 end
